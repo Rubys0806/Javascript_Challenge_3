@@ -25,4 +25,4 @@
 ![Screenshot image of the final appearence of the website.](./Develop/Screenshot.png)
 
 ## URL
-[URL to deployed application: ***](***)
+[URL to deployed application: https://rubys0806.github.io/Javascript_Challenge_3/](https://rubys0806.github.io/Javascript_Challenge_3/)
