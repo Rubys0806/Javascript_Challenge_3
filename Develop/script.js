@@ -18,7 +18,8 @@ while (true) {
 
   var passwordLength = window.prompt("How many characters would you like your password to be? (Password must be between 8-128 characters.)");
   if (passwordLength === null) {
-    break;
+    var error = "Try again."
+    return error;
   }
   passwordLengthInteger= parseInt(passwordLength);
   if(passwordLengthInteger < 8 || passwordLengthInteger > 128 || isNaN(passwordLengthInteger)){
@@ -46,18 +47,18 @@ if (special) {
 }
 
 if (lowercase === true || uppercase === true || numeric === true || special === true) {
-
+ for(var i=0; i<passwordLengthInteger; i++)
+ {
+   newPassword += selectedChar[Math.floor(Math.random() * selectedChar.length)];
+ }
+ return newPassword;
 }
 
 else {
   window.alert("You need to choose at least one criteria to meet for your password.")
   continue; 
-}
-
-
-break;
-}
-
+    }
+  }
 }
 
 // Write password to the #password input
